@@ -227,6 +227,8 @@ def main_code():
 
         write_file = open("wordlist.txt","w",encoding="utf-8")
         write_file.write(words_last_version)
+        
+        colorprint("Created as wordlist.txt file","3")
 
     except FileExistsError:
         print(f"\n{colorprint('[ERROR]',1)} {colorprint('wordlist.txt',3)} already exists!\n")
