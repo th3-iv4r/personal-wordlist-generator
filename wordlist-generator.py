@@ -3,6 +3,10 @@
 
 from colored import fg,attr
 import random
+import os
+
+os.system('pip install colored')
+os.system('clear')
 
 def colorprint(text,color):
     return "%s{}%s".format(text) % (fg(color),attr(0))
